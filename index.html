@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+      <nav>
+        <div class="logo">
+          <h2>SHOPIFY</h2>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a class="active" href="#home">HOME</a></li>
+            <li><a href="#products">PRODUCTS</a></li>
+            <li><a href="#contact">CONTACTS</a></li>
+            <li><button class="sign">SIGN IN</button></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="home">
+        <div class="caption">
+          <h1 class="title">Find what you love, <br>
+              <span class="line2"><span class="outline">Love what</span> you find</span> </h1>
+          <p>
+            Welcome to your ultimate shopping destination! Whether you’re
+            looking for trendy fashion and stylish accessories, the latest
+            gadgets and electronics, or everyday essentials, we have it all.
+            Discover products that match your style, upgrade your lifestyle, and
+            make life easier – all in one place.
+          </p>
+          <a href="#products"><button class="shop">SHOP NOW</button></a>
+        </div>
+        <div class="image">
+          <div class="design"></div>
+          <img src="./images/back.png" alt="home photo" />
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+        <h1>Our Collections</h1>
+        <p>
+            Discover carefully curated pieces crafted for modern lifestyle.
+            Explore timeless essentials built with purpose and simplicity.
+        </p>
+    </section>
+
+    <!-- FILTER SECTION -->
+    <section class="filter-box">
+
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="jewelery">Jewelery</option>
+            <option value="electronics">Electronics</option>
+        </select>
+
+        <select id="priceFilter">
+            <option value="all">All Prices</option>
+            <option value="under50">Under $50</option>
+            <option value="50to100">$50 - $100</option>
+            <option value="100to200">$100 - $200</option>
+            <option value="above200">Above $200</option>
+        </select>
+
+    </section>
+
+    <div id="loading">Loading products...</div>
+
+    <section id="products" class="products"></section>
+
+
+    <div id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="sub">
+            <input type="text" placeholder="Enter your email">
+            <button>subscribe</button>
+
+        </div>
+        <div class="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+
+
+        </div>
+        <p>Copyright 2026 shopify. Designed by Team5. All rights reserved </p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
